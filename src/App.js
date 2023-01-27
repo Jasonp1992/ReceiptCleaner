@@ -6,16 +6,6 @@ import { createWorker } from "tesseract.js";
 function App() {
   const [text, setText] = useState([]);
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   Tesseract.recognize(`${testImg}`, "eng", {
-  //     logger: (m) => console.log(m),
-  //   }).then(({ data: { lines } }) => {
-  //     setText(lines);
-  //     console.log(lines);
-  //   });
-  // };
-
   let test = async () => {
     const worker = await createWorker({
       logger: (m) => console.log(m),
