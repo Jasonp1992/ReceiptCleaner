@@ -32,7 +32,7 @@ function App() {
     }
 
     line.words.forEach((word) => {
-      line.text = line.text.replace(/[^A-Za-z0-9./[/]-\s]+/gm, '')
+      line.text = line.text.replace(/[^A-Za-z0-9.-\s]+/gm, '')
       const priceReg = /\.\d{2}/gm
       const numCheck = /\d+/gm
 
